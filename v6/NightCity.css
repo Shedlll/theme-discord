@@ -1,0 +1,641 @@
+/**
+ * @name AiYa CV Theme I guess
+ * @author AiYa
+ * @version 6.2.1
+ * @description A cyberpunk-ish dark preset for CV
+ * @invite 2fKpjAR
+ * @source https://github.com/ClearVision/ClearVision-v6
+ * @website https://github.com/Ai-Ya-Ya/CVTheme
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@100;300;400;500;700&display=swap');
+@import url('https://clearvision.github.io/ClearVision-v6/main.css');
+
+/* change main-color and contrast-color if needed */
+
+:root {
+    --main-color: #fff;
+    --hover-color: #6a6a6a;
+    --success-color: #43b581;
+    --danger-color: #982929;
+    --contrast-color: #000;
+    --url-color: var(--main-color);
+    --background-image: url('https://ai-ya-ya.github.io/CVTheme/Cool%20City%20Background.jpg');
+    /* --background-image: url('https://ai-ya-ya.github.io/CVTheme/idofront.png'); */
+    --background-shading: 100%;
+    --background-position: center;
+    --background-size: cover;
+    --background-repeat: no-repeat;
+    --background-attachment: fixed;
+    --background-brightness: 100%;
+    --background-contrast: 100%;
+    --background-saturation: 100%;
+    --background-grayscale: 0%;
+    --background-invert: 0%;
+    --background-blur: 0px;
+    --background-overlay: rgba(0, 0, 0, 0.6);
+    --user-popout-image: var(--background-image);
+    --user-popout-position: center;
+    --user-popout-size: cover;
+    --user-popout-repeat: no-repeat;
+    --user-popout-attachment: fixed;
+    --user-popout-brightness: 100%;
+    --user-popout-contrast: 100%;
+    --user-popout-saturation: 100%;
+    --user-popout-grayscale: 0%;
+    --user-popout-invert: 0%;
+    --user-popout-blur: 3px;
+    --user-modal-image: var(--background-image);
+    --user-modal-position: center;
+    --user-modal-size: cover;
+    --user-modal-repeat: no-repeat;
+    --user-modal-attachment: fixed;
+    --user-modal-brightness: 100%;
+    --user-modal-contrast: 100%;
+    --user-modal-saturation: 100%;
+    --user-modal-grayscale: 0%;
+    --user-modal-invert: 0%;
+    --user-modal-blur: 3px;
+    --home-icon: url('https://clearvision.gitlab.io/icons/discord.svg');
+    --home-position: center;
+    --home-size: 40px;
+    --channel-unread: var(--main-color);
+    --channel-color: rgba(255, 255, 255, 0.3);
+    --muted-color: rgba(255, 255, 255, 0.1);
+    --online-color: #43b581;
+    --idle-color: #faa61a;
+    --dnd-color: #982929;
+    --streaming-color: #593695;
+    --offline-color: #808080;
+    --main-font: 'Whitney';
+    --code-font: 'Fira Code';
+    --backdrop-overlay: rgba(0, 0, 0, 0.8);
+    --backdrop-image: var(--background-image);
+    --backdrop-position: var(--background-position);
+    --backdrop-size: var(--background-size);
+    --backdrop-repeat: var(--background-repeat);
+    --backdrop-attachment: var(--background-attachment);
+    --backdrop-brightness: var(--background-brightness);
+    --backdrop-contrast: var(--background-contrast);
+    --backdrop-saturation: var(--background-saturation);
+    --backdrop-invert: var(--background-invert);
+    --backdrop-grayscale: var(--background-grayscale);
+    --backdrop-sepia: var(--background-sepia);
+    --backdrop-blur: var(--background-blur);
+    --bd-blue: var(--main-color);
+    --bd-blue-hover: var(--hover-color);
+    --bd-blue-active: var(--hover-color);
+    --channels-width: 220px;
+    --members-width: 240px;
+    /* My extra edits go here */
+}
+
+
+/* My extra edits go here */
+
+
+/* Selected channel invert color */
+
+li.containerDefault-YUSmu3.selected-2TbFuo div.channelName-3KPsGw {
+    color: var(--contrast-color);
+}
+
+li.containerDefault-YUSmu3.selected-2TbFuo svg {
+    filter: brightness(0%);
+}
+
+
+/* Selected settings invert color */
+
+div.item-3XjbnG.selected-g-kMVV.themed-2-lozF:before {
+    filter: brightness(0%);
+}
+
+.standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-2ur1Qk .item-3XjbnG.selected-g-kMVV {
+    color: var(--contrast-color) !important;
+    /* the !important is necessary */
+}
+
+
+/* Selected DM invert color */
+
+li.channel-1Shao0.container-32HW5s div.selected-3veCBZ div.content-66wMin div {
+    color: var(--contrast-color);
+}
+
+li.channel-1Shao0.container-32HW5s div.selected-3veCBZ div.closeButton-mupH76 path {
+    fill: var(--contrast-color);
+}
+
+li.channel-1Shao0.container-32HW5s div.selected-3veCBZ svg.linkButtonIcon-7rsZcu {
+    filter: brightness(0%);
+}
+
+
+/* DMs top bar invert color */
+
+div.tabBar-ra-EuL.topPill-3DJJNV div.selected-g-kMVV {
+    color: var(--contrast-color) !important;
+}
+
+div.tabBar-ra-EuL.topPill-3DJJNV div span {
+    color: var(--contrast-color);
+}
+
+
+/* Ping icon invert color */
+
+div.numberBadge-37OJ3S.base-3IDx3L.baseShapeRound-3epLEv {
+    color: var(--contrast-color);
+}
+
+
+/* The following four button changes are just so text appears legibly */
+
+button.button-f2h6uQ.lookFilled-yCfaCM div.contents-3ca1mk {
+    color: var(--contrast-color);
+}
+
+div.control-1fl03- div.container-2nx-BQ svg.slider-32CRPX {
+    filter: brightness(0%);
+}
+
+div.da-contentRegion button div.contents-18-Yxp.da-contents {
+    color: var(--contrast-color);
+}
+
+div.da-contentRegion button.colorRed-1TFJan div.contents-18-Yxp.da-contents {
+    color: #f04747;
+}
+
+div.da-contentRegion button.colorRed-1TFJan.da-disableButton div.contents-18-Yxp.da-contents {
+    color: var(--main-color);
+}
+
+div.da-contentRegion button.lookOutlined-3sRXeN.colorBrand-3pXr91 div.contents-18-Yxp.da-contents {
+    color: #fff;
+}
+
+
+/* For multiple choice/radio button settings */
+
+div[aria-checked*=true] div.radioBar-3w9XY- div {
+    color: var(--contrast-color);
+}
+
+div[aria-selected*=true] div.radioBar-3w9XY- svg {
+    filter: brightness(0%);
+}
+
+
+/* Apparently BD has its own set of ids and classes */
+
+button.bd-button,
+button.bd-pfbtn {
+    color: var(--contrast-color);
+}
+
+
+/* Buttons and other small things */
+
+a.da-selected div.da-name {
+    color: var(--contrast-color);
+}
+
+div.da-actionButtons div {
+    color: var(--contrast-color);
+}
+
+button.da-followButton div {
+    color: var(--contrast-color);
+}
+
+form button {
+    color: var(--contrast-color);
+}
+
+
+/* Ping autocomplete */
+
+div.base-2v-uc0.selectable-1MM9tu.selected-3H3-RC div {
+    color: var(--contrast-color);
+}
+
+div.base-2v-uc0.selectable-1MM9tu.selected-3H3-RC div span {
+    color: var(--contrast-color);
+}
+
+
+/* Search fields color inversion */
+
+div.search-2oPWTC span.searchFilter-2ESiM3 {
+    color: var(--contrast-color);
+}
+
+div.search-2oPWTC span.searchAnswer-3Dz2-q * {
+    color: var(--contrast-color);
+}
+
+div.ring-13rgEW {
+    color: var(--contrast-color);
+}
+
+div.searchBar-zdmu7v div.DraftEditor-editorContainer span.searchFilter-2UfsDk span,
+div.searchBar-zdmu7v div.DraftEditor-editorContainer span.searchAnswer-23w-CH span {
+    color: var(--contrast-color);
+}
+
+div.queryContainer-ZunrLZ.focused-2FU0YH div,
+div.queryContainer-ZunrLZ.focused-2FU0YH div span,
+div.queryContainer-ZunrLZ.focused-2FU0YH div strong {
+    color: var(--contrast-color) !important;
+}
+
+
+/* Upload button color inversion */
+
+button.button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91.sizeMedium-1AC_Sl.grow-q77ONN div {
+    color: var(--contrast-color);
+}
+
+
+/* New message bar color inversion */
+
+div#---new-messages-bar span.unreadPill-2HyYtt {
+    color: var(--contrast-color);
+}
+
+
+/* Get Nitro button color inversion */
+
+div.contents-18-Yxp.premiumSubscribeButton-3TowJw span.buttonText-3LvUCc {
+    color: var(--contrast-color);
+}
+
+div.contents-18-Yxp.premiumSubscribeButton-3TowJw svg.premiumIcon-YgHhed {
+    filter: brightness(0%);
+}
+
+
+/* Selected channels create invite invert color */
+
+div#channels div.containerDefault--pIXnN.selected-3LIHYU svg {
+    filter: brightness(0%);
+}
+
+
+/* DM avatar color inversion */
+
+a#private-channels-0.da-selected div div.avatar-3uk_u9 svg {
+    filter: brightness(0%);
+}
+
+a#private-channels-1.da-selected div div.avatar-3uk_u9 svg {
+    filter: brightness(0%);
+}
+
+
+/* Server invite invert color */
+
+div.container-1ov-mD.da-container div div.content-2U5lSY.da-content button div.contents-18-Yxp.da-contents {
+    color: var(--contrast-color);
+}
+
+
+/* Video time scoller invert color */
+
+div.bubble-3qRl2J {
+    color: var(--contrast-color);
+}
+
+
+/* Extension-specific (message logger) invert color */
+
+svg.questionMark-3qBhGj.da-questionMark g {
+    fill: var(--contrast-color);
+}
+
+
+/* inbox text and button invert color */
+
+div.tabBar-1kuXvJ.da-tabBar.topPill-30KHOu div[aria-selected*=true] {
+    color: var(--contrast-color);
+}
+
+div.container-enaOkj.recentMentionsPopout-3rCiI6.da-container.da-recentMentionsPopout svg {
+    filter: brightness(0%);
+}
+
+div.container-enaOkj.recentMentionsPopout-3rCiI6.da-container.da-recentMentionsPopout button {
+    color: var(--contrast-color);
+}
+
+
+/* radio button and slider invert color */
+
+svg.slider-TkfMQL.da-slider rect {
+    fill: var(--contrast-color);
+}
+
+circle.da-radioIconForeground {
+    fill: var(--contrast-color);
+}
+
+
+/* BD's own setting IDs are getting pretty annoying */
+
+div.bd-switch::after {
+    background-color: var(--contrast-color);
+}
+
+div.tab-2j5AEF.da-tab.da-selected[aria-selected*=true] {
+    color: var(--contrast-color);
+}
+
+
+/* Reroll on 25/3/2021 changes */
+
+
+/* i actually forgot what this was for, sorry */
+
+div.scroller-1Bvpku.da-scroller.none-2Eo-qx.scrollerBase-289Jih {
+    background: transparent;
+}
+
+
+/* settings button color invert */
+
+main.contentColumn-2hrIYH.contentColumnDefault-1VQkGM button div.contents-18-Yxp {
+    color: var(--contrast-color);
+}
+
+main.contentColumn-2hrIYH.contentColumnDefault-1VQkGM button.colorRed-1TFJan div.contents-18-Yxp {
+    color: var(--main-color);
+}
+
+main.contentColumn-2hrIYH.contentColumnDefault-1VQkGM button.lookOutlined-3sRXeN div.contents-18-Yxp {
+    color: var(--main-color);
+}
+
+
+/* slider visual improvement */
+
+svg.slider-TkfMQL rect {
+    fill: var(--contrast-color);
+}
+
+
+/* random settings weren't color inverting */
+
+div[aria-controls*="Discord Nitro-tab"][aria-selected*=true]:before {
+    filter: brightness(0%);
+}
+
+
+/* radio button bar invert */
+
+div.item-26Dhrx.marginBottom8-AtZOdT.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG[aria-checked*=true] div.radioBar-bMNUI- div.info-3LOr12 div {
+    color: var(--contrast-color);
+}
+
+div.item-26Dhrx.marginBottom8-AtZOdT.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG[aria-checked*=true] path {
+    fill: var(--contrast-color);
+}
+
+div.item-26Dhrx.marginBottom8-AtZOdT.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG[aria-checked*=true] circle {
+    fill: var(--contrast-color);
+}
+
+button.bd-button.bd-button-title {
+    background-color: var(--main-color);
+}
+
+div.bd-addon-card {
+    background: transparent;
+}
+
+div.bd-addon-card div.bd-addon-header {
+    background: transparent;
+}
+
+button.bd-button.bd-view-button.selected {
+    background-color: transparent;
+}
+
+button.bd-button.bd-view-button.selected svg {
+    fill: var(--main-color);
+}
+
+div.bd-controls button {
+    background-color: var(--main-color);
+}
+
+div.bd-controls button svg {
+    fill: var(--contrast-color);
+}
+
+div.bd-controls button.bd-button-danger {
+    background-color: var(--contrast-color);
+}
+
+div.bd-controls button.bd-button-danger svg {
+    fill: var(--main-color);
+}
+
+
+/* ping indicator invert */
+
+div.lowerBadge-29hYVK div {
+    color: var(--contrast-color);
+}
+
+div.container-1fnzfI button div.contents-18-Yxp {
+    color: var(--contrast-color);
+}
+
+
+/* @ menu ping autocomplete invert */
+
+div.autocomplete-1vrmpx.autocomplete-3l_oCd div.base-1pYU8j.selectable-3dP3y-.selected-1Tbx07 div {
+    color: var(--contrast-color);
+}
+
+
+/* vc menu buttons invert */
+
+button div.contents-18-Yxp div {
+    color: var(--contrast-color);
+}
+
+
+/* DM close DM cross invert */
+
+svg.closeIcon-rycxaQ path {
+    fill: var(--contrast-color);
+}
+
+
+/* friend request counter invert */
+
+div.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW:before {
+    background-color: var(--contrast-color);
+}
+
+a.channel-2QD9_O.container-2Pjhx-.selected-aXhQR6 div.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW:before {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 1.0);
+}
+
+a.channel-2QD9_O.container-2Pjhx-.selected-aXhQR6 .layout-2DM8Md:after {
+    background: transparent;
+}
+
+
+/* DM menu top bar selected counter invert */
+
+div.item-3HknzM.item-PXvHYJ.selected-3s45Ha.themed-OHr7kt {
+    background: transparent;
+}
+
+div.numberBadge-2s8kKX.baseShapeRound-1Mm1YW {
+    color: var(--contrast-color);
+}
+
+
+/* search menu color invert */
+
+div.searchHeader-2XoQg7 div.tab-2j5AEF.selected-2LAck8 {
+    color: var(--contrast-color) !important;
+}
+
+
+/* AKA badge color invert */
+
+div.akaBadge-3i7V3p {
+    color: var(--contrast-color) !important;
+}
+
+
+/* friend request buttons color invert */
+
+div.flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6 button.actionButton-3W1xZa {
+    color: var(--contrast-color);
+}
+
+
+/* add friend button color change */
+
+div.item-3HknzM.item-PXvHYJ.themed-OHr7kt[aria-controls*="ADD_FRIEND-tab"] {
+    background: transparent;
+}
+
+div.item-3HknzM.item-PXvHYJ.themed-OHr7kt[aria-controls*="ADD_FRIEND-tab"][aria-selected*="true"] {
+    background: transparent;
+    background-color: rgba(0, 0, 0, 1.0);
+    color: var(--main-color);
+    box-shadow: 0 0 0 1px var(--main-color) inset;
+}
+
+
+/* user profile button color invert */
+
+div.topSectionNormal-2-vo2m button.actionButton-3W1xZa {
+    color: var(--contrast-color);
+}
+
+
+/* GIF and sticker buttons visible */
+
+button.button-38aScr.lookBlank-3eh9lL.colorBrand-3pXr91.grow-q77ONN div div svg {
+    color: var(--main-color);
+}
+
+
+/* jump to present bar color invert */
+
+div.jumpToPresentBar-G1R9s6.barBase-1c2Rfb:hover button {
+    color: var(--contrast-color);
+}
+
+
+/* plugin update bar color invert */
+
+div#pluginNotice {
+    background: var(--main-color);
+}
+
+div#pluginNotice span {
+    color: var(--contrast-color);
+}
+
+div#pluginNotice strong span {
+    color: var(--contrast-color);
+}
+
+div#pluginNoticeDismiss {
+    background: var(--contrast-color);
+}
+
+
+/* BD updated their switch settings again */
+
+div.bd-switch-body {
+    background-color: var(--main-color);
+}
+
+rect.bd-switch-handle {
+    fill: var(--contrast-color);
+}
+
+.bd-switch input:checked+.bd-switch-body {
+    --switch-color: var(--main-color);
+}
+
+
+/* search pagination color invert */
+
+div.roundButton-CEHyUp.pageButton-2ruNwd.activeButton-rvKcqq span {
+    color: var(--contrast-color);
+}
+
+
+/* DMs logo color invert */
+
+div.wrapper-3kah-n.selected-1Drb7Z svg {
+    filter: brightness(0%);
+}
+
+
+/* BD popups color invert */
+
+div.bd-toasts div.bd-toast {
+    color: var(--contrast-color);
+}
+
+
+/* new message popup color invert */
+
+div.bar-2eAyLE.unreadMentionsBar-ZXXoOH.unread-2wipsx.active-334r9u span,
+div.bar-2eAyLE.unreadBar-elBRZx.unread-2wipsx.active-334r9u span,
+div.bar-2eAyLE.unreadMentionsBar-ZXXoOH.mention-3XBnnZ.active-334r9u span {
+    color: var(--contrast-color);
+}
+
+span.unreadPill-3nEWYM {
+    color: var(--contrast-color);
+}
+
+
+/* NSFW tag color invert */
+
+div.nsfwTag-666omg div {
+    color: var(--contrast-color);
+}
+
+
+/* new message channel bar color invert */
+
+div.newMessagesBar-1hF-9G button,
+div.newMessagesBar-1hF-9G button span {
+    color: var(--contrast-color);
+}
