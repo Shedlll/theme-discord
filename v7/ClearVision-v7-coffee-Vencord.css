@@ -13,8 +13,8 @@
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
-  --main-color: #4f3027;
-  --hover-color: #eaD19e;
+  --main-color: #EAD19E;
+  --hover-color: #C7C0A4;
   --success-color: #43b581;
   --danger-color: #982929;
   /* STATUS COLORS */
@@ -25,7 +25,7 @@
   --offline-color: #808080;
   /* APP BACKGROUND */
   --background-shading-percent: 100%;
-  --background-image: url(https://i.redd.it/ek9mkwacopve1.jpeg);
+  --background-image: url(https://i.redd.it/2mcmcfeqzpve1.jpeg);
   --background-attachment: fixed;
   --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
   /* USER POPOUT BACKGROUND */
