@@ -15,8 +15,8 @@
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
-  --main-color: #da27e6; /* main accent color (hex, rgb, or hsl) [default: #da27e6] */
-  --hover-color: #a71eb3; /* hover accent color (hex, rgb, or hsl) [default: #a71eb3] */
+  --main-color: #4a2574; /* main accent color (hex, rgb, or hsl) [default: #da27e6] */
+  --hover-color: #7338a0; /* hover accent color (hex, rgb, or hsl) [default: #a71eb3] */
   --success-color: #43b581; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
   --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
   
@@ -29,7 +29,7 @@
 
   /* APP BACKGROUND */
   --background-shading-percent: 100%; /* background shading amount (0 for complete smoothness) [default: 100%] */
-  --background-image: url(https://clearvision.github.io/images/amethyst.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/amethyst.jpg)] */
+  --background-image: url(https://i.redd.it/mtx22pjukaef1.png); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/amethyst.jpg)] */
   --background-position: center; /* app background position [default: center] */
   --background-size: cover; /* app background size (px) [default: cover] */
   --background-attachment: fixed; /* app background attachment [default: fixed] */
