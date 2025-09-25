@@ -15,8 +15,8 @@
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
-  --main-color: #e67a27; /* main accent color (hex, rgb or hsl) [default: #e67a27] */
-  --hover-color: #b35d1e; /* hover accent color (hex, rgb or hsl) [default: #b35d1e] */
+  --main-color: #792c0e; /* main accent color (hex, rgb or hsl) [default: #e67a27] */
+  --hover-color: #8c3c14; /* hover accent color (hex, rgb or hsl) [default: #b35d1e] */
   --success-color: #43b581; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
   --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
   
@@ -29,7 +29,7 @@
 
   /* APP BACKGROUND */
   --background-shading-percent: 100%; /* app background shading amount (0 for complete smoothness) [default: 100%] */
-  --background-image: url(https://clearvision.github.io/images/halloween.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/halloween.jpg)]*/
+  --background-image: url(https://i.redd.it/25y0w4owfbrf1.png); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/halloween.jpg)]*/
   --background-position: center; /* app background position [default: center] */
   --background-size: cover; /* app background size (px) [default: cover] */
   --background-attachment: fixed; /* app background attachment [default: fixed] */
@@ -116,3 +116,4 @@
 }
 
 /* ADD ADDITIONAL CSS BELOW HERE */
+
